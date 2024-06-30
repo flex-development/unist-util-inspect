@@ -4,7 +4,7 @@
  */
 
 /**
- * Inspect a node, without color.
+ * Inspect a tree, without color.
  *
  * @const {boolean} color
  */

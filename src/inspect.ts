@@ -16,7 +16,7 @@ const COLOR_RE: RegExp =
   /(?:(?:\u001B\[)|\u009B)(?:\d{1,3})?(?:(?:;\d{0,3})*)?[A-Mf-m|]|\u001B[A-M]/g
 
 /**
- * Inspect a node, with color in Node, without color in browsers.
+ * Inspect a tree, with color in Node, without color in browsers.
  *
  * @see {@linkcode Options}
  *
@@ -30,7 +30,7 @@ const inspect: (tree: unknown, options?: Options | null) => string = color
   : inspectNoColor
 
 /**
- * Inspect a node, using color.
+ * Inspect a tree, with color.
  *
  * @see {@linkcode Options}
  *
@@ -43,7 +43,7 @@ function inspectColor(tree: unknown, options?: Options | null): string {
 }
 
 /**
- * Inspect a node, without color.
+ * Inspect a tree, without color.
  *
  * @see {@linkcode Options}
  *

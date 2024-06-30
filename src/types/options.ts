@@ -8,7 +8,7 @@
  */
 type Options = {
   /**
-   * Boolean indicating if positional information should be included.
+   * Include positional information.
    *
    * @default true
    */

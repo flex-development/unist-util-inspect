@@ -19,6 +19,10 @@
 - [Install](#install)
 - [Use](#use)
 - [API](#api)
+  - [`inspect(tree[, options])`](#inspecttree-options)
+  - [`inspectColor(tree[, options])`](#inspectcolortree-options)
+  - [`inspectNoColor(tree[, options])`](#inspectnocolortree-options)
+  - [`Options`](#options)
 - [Types](#types)
 - [Contribute](#contribute)
 
@@ -209,7 +213,44 @@ root[7]
 
 ## API
 
-**TODO**: api
+This package exports the identifiers [`inspect`](#inspecttree-options), [`inspectColor`](#inspectcolortree-options), and
+[`inspectNoColor`](#inspectnocolortree-options).
+
+There is no default export.
+
+### `inspect(tree[, options])`
+
+Inspect a tree, with color in Node, without color in browsers.
+
+#### Parameters
+
+- `tree` (`unknown`) &mdash; tree to inspect
+- `options` ([`Options`](#options) | `null` | `undefined`) &mdash; configuration options
+
+#### Returns
+
+(`string`) Pretty printed `tree`.
+
+### `inspectColor(tree[, options])`
+
+Inspect a tree, with color.
+
+Otherwise the same as [`inspect`](#inspecttree-options).
+
+### `inspectNoColor(tree[, options])`
+
+Inspect a tree, without color.
+
+Otherwise the same as [`inspect`](#inspecttree-options).
+
+### `Options`
+
+Configuration options (TypeScript type).
+
+#### Fields
+
+- `positions?` (`boolean | null | undefined`) &mdash; include positional information
+  - **default**: `true`
 
 ## Types
 
