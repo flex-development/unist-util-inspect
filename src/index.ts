@@ -3,4 +3,5 @@
  * @module unist-util-inspect
  */
 
-export {}
+export * from './inspect'
+export type * from './types'

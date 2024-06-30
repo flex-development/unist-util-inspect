@@ -4,6 +4,7 @@
     "declaration": true,
     "noEmitOnError": true,
     "paths": {
+      "#conditional-color": ["#conditional-color"],
       "#src/*": ["src/*"]
     },
     "target": "es2022"

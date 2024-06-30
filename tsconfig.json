@@ -29,7 +29,7 @@
     "noUnusedParameters": false,
     "outDir": "dist",
     "paths": {
-      "#fixtures/*": ["__fixtures__/*"],
+      "#conditional-color": ["src/color.node"],
       "#src": ["src/index"],
       "#src/*": ["src/*"],
       "#tests/*": ["__tests__/*"],

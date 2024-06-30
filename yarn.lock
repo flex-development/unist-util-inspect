@@ -1858,6 +1858,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@flex-development/unist-util-builder@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@flex-development/unist-util-builder@npm:2.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Funist-util-builder%2F2.0.0%2F2589c6774a811c50c2d08501dfcd1a5ed551c883"
+  dependencies:
+    "@flex-development/unist-util-types": "npm:1.6.1"
+    "@types/unist": "npm:3.0.2"
+  checksum: 10/58e6dc90395b636d7c02d5ab5966a8fbdaf0e9a01c8ff99398e98f8570b422b9c08492365968a85517d6d7991f095a11732a37f775a5af8773c2dda2f673de6d
+  languageName: node
+  linkType: hard
+
 "@flex-development/unist-util-inspect@workspace:.":
   version: 0.0.0-use.local
   resolution: "@flex-development/unist-util-inspect@workspace:."
@@ -1868,6 +1878,7 @@ __metadata:
     "@eslint/js": "npm:9.6.0"
     "@flex-development/commitlint-config": "npm:1.0.1"
     "@flex-development/decorator-regex": "npm:2.0.0"
+    "@flex-development/docast": "npm:1.0.0-alpha.17"
     "@flex-development/docast-util-from-docs": "flex-development/docast-util-from-docs#commit=872166576c895fb46e45417283e4d2dd3f98e13c"
     "@flex-development/esm-types": "npm:2.0.0"
     "@flex-development/grease": "npm:3.0.0-alpha.9"
@@ -1875,6 +1886,7 @@ __metadata:
     "@flex-development/mlly": "npm:1.0.0-alpha.18"
     "@flex-development/pathe": "npm:2.0.0"
     "@flex-development/tutils": "npm:6.0.0-alpha.25"
+    "@flex-development/unist-util-builder": "npm:2.0.0"
     "@flex-development/unist-util-stringify-position": "npm:1.0.0"
     "@stylistic/eslint-plugin": "npm:2.3.0"
     "@types/chai": "npm:4.3.16"
@@ -1883,6 +1895,7 @@ __metadata:
     "@types/is-ci": "npm:3.0.4"
     "@types/node": "npm:20.14.9"
     "@types/node-notifier": "npm:8.0.5"
+    "@types/unist": "npm:3.0.2"
     "@typescript-eslint/eslint-plugin": "npm:8.0.0-alpha.34"
     "@typescript-eslint/parser": "npm:8.0.0-alpha.34"
     "@vates/toggle-scripts": "npm:1.0.0"
@@ -1910,6 +1923,7 @@ __metadata:
     eslint-plugin-yml: "npm:1.14.0"
     globals: "npm:15.6.0"
     growl: "npm:1.10.5"
+    hastscript: "npm:9.0.0"
     husky: "npm:9.0.11"
     is-ci: "npm:3.0.1"
     jsonc-eslint-parser: "npm:2.4.0"
@@ -1929,6 +1943,7 @@ __metadata:
     vfile: "npm:6.0.1"
     vite-tsconfig-paths: "npm:4.3.2"
     vitest: "npm:2.0.0-beta.12"
+    xast-util-from-xml: "npm:4.0.0"
     yaml-eslint-parser: "npm:1.2.3"
   languageName: unknown
   linkType: soft
@@ -2248,6 +2263,13 @@ __metadata:
   version: 1.0.0-next.25
   resolution: "@polka/url@npm:1.0.0-next.25"
   checksum: 10/4ab1d7a37163139c0e7bfc9d1e3f6a2a0db91a78b9f0a21f571d6aec2cdaeaacced744d47886c117aa7579aa5694b303fe3e0bd1922bb9cb3ce6bf7c2dc09801
+  languageName: node
+  linkType: hard
+
+"@rgrove/parse-xml@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "@rgrove/parse-xml@npm:4.1.0"
+  checksum: 10/30a4edb1dabd17431db438f918a465f1119258dba42285eeef3cc22154fcd91fea721cc184d297e07cb375ac83f3542ecbfaf2a3edd0eb31f7d4f5de18312e0b
   languageName: node
   linkType: hard
 
@@ -2720,17 +2742,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/unist@npm:*, @types/unist@npm:3.0.2, @types/unist@npm:^3.0.0":
+"@types/unist@npm:3.0.2":
   version: 3.0.2
   resolution: "@types/unist@npm:3.0.2"
   checksum: 10/3d04d0be69316e5f14599a0d993a208606c12818cf631fd399243d1dc7a9bd8a3917d6066baa6abc290814afbd744621484756803c80cba892c39cd4b4a85616
-  languageName: node
-  linkType: hard
-
-"@types/unist@npm:^2, @types/unist@npm:^2.0.0, @types/unist@npm:^2.0.2":
-  version: 2.0.10
-  resolution: "@types/unist@npm:2.0.10"
-  checksum: 10/e2924e18dedf45f68a5c6ccd6015cd62f1643b1b43baac1854efa21ae9e70505db94290434a23da1137d9e31eb58e54ca175982005698ac37300a1c889f6c4aa
   languageName: node
   linkType: hard
 
@@ -2738,6 +2753,15 @@ __metadata:
   version: 13.11.8
   resolution: "@types/validator@npm:13.11.8"
   checksum: 10/27cba3b43d79cff40c57703225944efacb9c4954379640a8f1ba29cdae07f36fc1115deed08dada9f6d7ff09f205540d04c435e27999dc1ce78d26fd3d8867a0
+  languageName: node
+  linkType: hard
+
+"@types/xast@npm:^2.0.0":
+  version: 2.0.4
+  resolution: "@types/xast@npm:2.0.4"
+  dependencies:
+    "@types/unist": "npm:*"
+  checksum: 10/41ed740a3deaa8c6aedf3d175ae2291d0bfaa5d56b0fa9d237e972e442364920e21dd63b4a3bfd078027752e681d643145c3e70c1aa02d96ddb20a9a4fc547dc
   languageName: node
   linkType: hard
 
@@ -3805,6 +3829,13 @@ __metadata:
   version: 2.0.20
   resolution: "colorette@npm:2.0.20"
   checksum: 10/0b8de48bfa5d10afc160b8eaa2b9938f34a892530b2f7d7897e0458d9535a066e3998b49da9d21161c78225b272df19ae3a64d6df28b4c9734c0e55bbd02406f
+  languageName: node
+  linkType: hard
+
+"comma-separated-tokens@npm:^2.0.0":
+  version: 2.0.3
+  resolution: "comma-separated-tokens@npm:2.0.3"
+  checksum: 10/e3bf9e0332a5c45f49b90e79bcdb4a7a85f28d6a6f0876a94f1bb9b2bfbdbbb9292aac50e1e742d8c0db1e62a0229a106f57917e2d067fca951d81737651700d
   languageName: node
   linkType: hard
 
@@ -5981,6 +6012,28 @@ __metadata:
   dependencies:
     function-bind: "npm:^1.1.2"
   checksum: 10/c330f8d93f9d23fe632c719d4db3d698ef7d7c367d51548b836069e06a90fa9151e868c8e67353cfe98d67865bf7354855db28fa36eb1b18fa5d4a3f4e7f1c90
+  languageName: node
+  linkType: hard
+
+"hast-util-parse-selector@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "hast-util-parse-selector@npm:4.0.0"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+  checksum: 10/76087670d3b0b50b23a6cb70bca53a6176d6608307ccdbb3ed18b650b82e7c3513bfc40348f1389dc0c5ae872b9a768851f4335f44654abd7deafd6974c52402
+  languageName: node
+  linkType: hard
+
+"hastscript@npm:9.0.0":
+  version: 9.0.0
+  resolution: "hastscript@npm:9.0.0"
+  dependencies:
+    "@types/hast": "npm:^3.0.0"
+    comma-separated-tokens: "npm:^2.0.0"
+    hast-util-parse-selector: "npm:^4.0.0"
+    property-information: "npm:^6.0.0"
+    space-separated-tokens: "npm:^2.0.0"
+  checksum: 10/086444071570361e542078edba27a22a583804b93a759d17e50d0f11ca268da573f1da160eb11a64e86edbbe32d59afe7c7554c739715012a351c52884a67b1e
   languageName: node
   linkType: hard
 
@@ -8843,6 +8896,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"property-information@npm:^6.0.0":
+  version: 6.5.0
+  resolution: "property-information@npm:6.5.0"
+  checksum: 10/fced94f3a09bf651ad1824d1bdc8980428e3e480e6d01e98df6babe2cc9d45a1c52eee9a7736d2006958f9b394eb5964dedd37e23038086ddc143fc2fd5e426c
+  languageName: node
+  linkType: hard
+
 "pump@npm:^3.0.0":
   version: 3.0.0
   resolution: "pump@npm:3.0.0"
@@ -9576,6 +9636,13 @@ __metadata:
   version: 1.2.0
   resolution: "source-map-js@npm:1.2.0"
   checksum: 10/74f331cfd2d121c50790c8dd6d3c9de6be21926de80583b23b37029b0f37aefc3e019fa91f9a10a5e120c08135297e1ecf312d561459c45908cb1e0e365f49e5
+  languageName: node
+  linkType: hard
+
+"space-separated-tokens@npm:^2.0.0":
+  version: 2.0.2
+  resolution: "space-separated-tokens@npm:2.0.2"
+  checksum: 10/202e97d7ca1ba0758a0aa4fe226ff98142073bcceeff2da3aad037968878552c3bbce3b3231970025375bbba5aee00c5b8206eda408da837ab2dc9c0f26be990
   languageName: node
   linkType: hard
 
@@ -10578,6 +10645,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vfile-location@npm:^5.0.0":
+  version: 5.0.2
+  resolution: "vfile-location@npm:5.0.2"
+  dependencies:
+    "@types/unist": "npm:^3.0.0"
+    vfile: "npm:^6.0.0"
+  checksum: 10/b61c048cedad3555b4f007f390412c6503f58a6a130b58badf4ee340c87e0d7421e9c86bbc1494c57dedfccadb60f5176cc60ba3098209d99fb3a3d8804e4c38
+  languageName: node
+  linkType: hard
+
 "vfile-message@npm:^4.0.0":
   version: 4.0.2
   resolution: "vfile-message@npm:4.0.2"
@@ -10908,6 +10985,18 @@ __metadata:
   version: 1.0.2
   resolution: "wrappy@npm:1.0.2"
   checksum: 10/159da4805f7e84a3d003d8841557196034155008f817172d4e986bd591f74aa82aa7db55929a54222309e01079a65a92a9e6414da5a6aa4b01ee44a511ac3ee5
+  languageName: node
+  linkType: hard
+
+"xast-util-from-xml@npm:4.0.0":
+  version: 4.0.0
+  resolution: "xast-util-from-xml@npm:4.0.0"
+  dependencies:
+    "@rgrove/parse-xml": "npm:^4.1.0"
+    "@types/xast": "npm:^2.0.0"
+    vfile-location: "npm:^5.0.0"
+    vfile-message: "npm:^4.0.0"
+  checksum: 10/7fb80b8bc5189e8f2de6d73dc630ce7da66f5900315c91c42e0a224e44d769f83e8545e3cdb388fefe28177e8c15e7bbb0223cae082d4d63c8464c924cd80af0
   languageName: node
   linkType: hard
 

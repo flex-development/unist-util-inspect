@@ -8,6 +8,7 @@ dessant
 docast
 dohm
 dprint
+esast
 fbca
 ggshield
 gpgsign
@@ -28,4 +29,5 @@ unstub
 vates
 vfile
 vitest
+xast
 yarnrc

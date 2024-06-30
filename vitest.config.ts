@@ -64,7 +64,8 @@ const config: UserConfigExport = defineConfig((env: ConfigEnv): UserConfig => {
           '**/interfaces/',
           '**/types/',
           '**/index.ts',
-          '!src/index.ts'
+          '!src/index.ts',
+          'src/color.*.ts'
         ],
         extension: ['.ts'],
         include: ['src'],

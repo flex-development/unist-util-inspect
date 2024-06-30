@@ -32,6 +32,12 @@
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
   },
+  "imports": {
+    "#conditional-color": {
+      "node": "./dist/color.node.mjs",
+      "default": "./dist/color.default.mjs"
+    }
+  },
   "types": "./dist/index.d.mts",
   "scripts": {
     "build": "mkbuild",
@@ -71,7 +77,8 @@
     "typecheck:watch": "vitest --mode=typecheck --typecheck"
   },
   "dependencies": {
-    "@flex-development/unist-util-stringify-position": "1.0.0"
+    "@flex-development/unist-util-stringify-position": "1.0.0",
+    "@types/unist": "3.0.2"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.15.3",
@@ -80,6 +87,7 @@
     "@eslint/js": "9.6.0",
     "@flex-development/commitlint-config": "1.0.1",
     "@flex-development/decorator-regex": "2.0.0",
+    "@flex-development/docast": "1.0.0-alpha.17",
     "@flex-development/docast-util-from-docs": "flex-development/docast-util-from-docs#commit=872166576c895fb46e45417283e4d2dd3f98e13c",
     "@flex-development/esm-types": "2.0.0",
     "@flex-development/grease": "3.0.0-alpha.9",
@@ -87,6 +95,7 @@
     "@flex-development/mlly": "1.0.0-alpha.18",
     "@flex-development/pathe": "2.0.0",
     "@flex-development/tutils": "6.0.0-alpha.25",
+    "@flex-development/unist-util-builder": "2.0.0",
     "@stylistic/eslint-plugin": "2.3.0",
     "@types/chai": "4.3.16",
     "@types/eslint": "8.56.10",
@@ -121,6 +130,7 @@
     "eslint-plugin-yml": "1.14.0",
     "globals": "15.6.0",
     "growl": "1.10.5",
+    "hastscript": "9.0.0",
     "husky": "9.0.11",
     "is-ci": "3.0.1",
     "jsonc-eslint-parser": "2.4.0",
@@ -140,9 +150,12 @@
     "vfile": "6.0.1",
     "vite-tsconfig-paths": "4.3.2",
     "vitest": "2.0.0-beta.12",
+    "xast-util-from-xml": "4.0.0",
     "yaml-eslint-parser": "1.2.3"
   },
   "resolutions": {
+    "@flex-development/docast": "1.0.0-alpha.17",
+    "@types/unist": "3.0.2",
     "chai": "5.1.1"
   },
   "engines": {

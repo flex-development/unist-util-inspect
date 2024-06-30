@@ -18,8 +18,13 @@ export default [
       '!**/typings/**/dist/',
       '**/.yarn/',
       '**/coverage/',
-      '**/dist/',
-      '__fixtures__/underscore-1.5.2.js'
+      '**/dist/'
     ]
+  },
+  {
+    files: ['src/inspect.ts'],
+    rules: {
+      'no-control-regex': 0
+    }
   }
 ]

@@ -87,6 +87,7 @@ ignore:
   - '**/types/'
   - '**/index.ts'
   - '!src/index.ts'
+  - src/color.*.ts
 
 profiling:
   critical_files_paths: []
