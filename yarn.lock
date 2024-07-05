@@ -1895,7 +1895,7 @@ __metadata:
     "@flex-development/pathe": "npm:2.0.0"
     "@flex-development/tutils": "npm:6.0.0-alpha.25"
     "@flex-development/unist-util-builder": "npm:2.0.0"
-    "@flex-development/unist-util-stringify-position": "npm:1.0.0"
+    "@flex-development/unist-util-stringify-position": "npm:1.0.1"
     "@stylistic/eslint-plugin": "npm:2.3.0"
     "@types/chai": "npm:4.3.16"
     "@types/eslint": "npm:8.56.10"
@@ -1956,13 +1956,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flex-development/unist-util-stringify-position@npm:1.0.0":
-  version: 1.0.0
-  resolution: "@flex-development/unist-util-stringify-position@npm:1.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Funist-util-stringify-position%2F1.0.0%2Fb2a5cbc97f53cee6e215f15a908a78109e543b48"
+"@flex-development/unist-util-stringify-position@npm:1.0.1":
+  version: 1.0.1
+  resolution: "@flex-development/unist-util-stringify-position@npm:1.0.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40flex-development%2Funist-util-stringify-position%2F1.0.1%2F573c6a592094d914733e4491a7a68de42c196c8f"
   dependencies:
     "@flex-development/unist-util-types": "npm:1.6.1"
     "@types/unist": "npm:3.0.2"
-  checksum: 10/085cfe2ce2398c1aa0f986ea54789a1cb1df69a348af7f2e013a443fd5672c76c8d2764cacefa0babe9545ed63a623876e0eb2c989a9516dad55e216d5bb9a53
+  checksum: 10/86410dc2984ecfb60f2db63d114b1929b056acf09e38dc822aea6b6dbcf92ebfd6e52f59d2392e10d9b60579e65fd21c740061943ffbb56e82d896d78c9ed5a1
   languageName: node
   linkType: hard
 

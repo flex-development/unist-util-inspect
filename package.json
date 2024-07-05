@@ -77,7 +77,7 @@
     "typecheck:watch": "vitest --mode=typecheck --typecheck"
   },
   "dependencies": {
-    "@flex-development/unist-util-stringify-position": "1.0.0",
+    "@flex-development/unist-util-stringify-position": "1.0.1",
     "@types/unist": "3.0.2"
   },
   "devDependencies": {
