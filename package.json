@@ -1,7 +1,7 @@
 {
   "name": "@flex-development/unist-util-inspect",
   "description": "unist utility to inspect nodes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "console",
     "inspect",
