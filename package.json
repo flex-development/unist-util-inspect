@@ -87,7 +87,7 @@
     "@eslint/js": "9.6.0",
     "@flex-development/commitlint-config": "1.0.1",
     "@flex-development/decorator-regex": "2.0.0",
-    "@flex-development/docast": "1.0.0-alpha.17",
+    "@flex-development/docast": "1.0.0-alpha.18",
     "@flex-development/docast-util-from-docs": "flex-development/docast-util-from-docs#commit=872166576c895fb46e45417283e4d2dd3f98e13c",
     "@flex-development/esm-types": "2.0.0",
     "@flex-development/grease": "3.0.0-alpha.9",
@@ -154,7 +154,7 @@
     "yaml-eslint-parser": "1.2.3"
   },
   "resolutions": {
-    "@flex-development/docast": "1.0.0-alpha.17",
+    "@flex-development/docast": "1.0.0-alpha.18",
     "@types/unist": "3.0.2",
     "chai": "5.1.1"
   },
