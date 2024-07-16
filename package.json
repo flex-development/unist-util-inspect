@@ -147,7 +147,7 @@
     "ts-dedent": "2.2.0",
     "typescript": "5.5.3",
     "typescript-eslint": "8.0.0-alpha.44",
-    "vfile": "6.0.1",
+    "vfile": "6.0.2",
     "vite-tsconfig-paths": "4.3.2",
     "vitest": "2.0.3",
     "xast-util-from-xml": "4.0.0",
