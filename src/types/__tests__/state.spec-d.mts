@@ -3,7 +3,7 @@
  * @module unist-util-inspect/types/tests/unit-d/State
  */
 
-import type TestSubject from '../state'
+import type TestSubject from '#types/state'
 
 describe('unit-d:types/State', () => {
   it('should match [positions: boolean]', () => {

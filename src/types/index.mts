@@ -3,4 +3,4 @@
  * @module unist-util-inspect/types
  */
 
-export type { default as Options } from './options'
+export type { default as Options } from '#types/options'

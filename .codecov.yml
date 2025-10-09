@@ -4,14 +4,14 @@
 ---
 codecov:
   notify:
-    after_n_builds: 3
+    after_n_builds: 7
     wait_for_ci: true
   require_ci_to_pass: true
 
 comment:
-  after_n_builds: 3
+  after_n_builds: 7
   behavior: default
-  layout: header,diff,flags,components,tree,footer
+  layout: header,diff,flags,tree,footer
   require_base: false
   require_changes: false
   require_head: true
@@ -26,6 +26,7 @@ coverage:
     changes:
       default:
         branches:
+          - dependabot/*
           - feat/*
           - hotfix/*
           - main
@@ -64,6 +65,22 @@ coverage:
         threshold: 0%
 
 flags:
+  node24:
+    carryforward: false
+    paths:
+      - src/
+  node23:
+    carryforward: false
+    paths:
+      - src/
+  node22:
+    carryforward: false
+    paths:
+      - src/
+  node21:
+    carryforward: false
+    paths:
+      - src/
   node20:
     carryforward: false
     paths:
@@ -81,13 +98,11 @@ github_checks:
   annotations: true
 
 ignore:
-  - '**/__mocks__/**'
-  - '**/__tests__/**'
+  - '**/*.d.mts'
+  - '**/__mocks__/'
+  - '**/__tests__/'
   - '**/interfaces/'
   - '**/types/'
-  - '**/index.ts'
-  - '!src/index.ts'
-  - src/color.*.ts
 
 profiling:
   critical_files_paths: []

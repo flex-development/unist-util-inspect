@@ -1,28 +1,20 @@
 /**
- * @file ESLint Configuration - Root
+ * @file eslint
  * @module config/eslint
  * @see https://eslint.org/docs/user-guide/configuring
  */
 
+import fldv from '@flex-development/eslint-config'
+
 /**
- * Root eslint configuration object.
+ * eslint configuration.
  *
- * @type {import('eslint').Linter.FlatConfig[]}
+ * @type {import('eslint').Linter.Config[]}
  */
 export default [
-  ...(await import('./eslint.base.config.mjs')).default,
+  ...fldv.configs.node,
   {
-    ignores: [
-      '!**/__fixtures__/**/dist/',
-      '!**/__fixtures__/**/node_modules/',
-      '!**/typings/**/dist/',
-      '**/.yarn/',
-      '**/coverage/',
-      '**/dist/'
-    ]
-  },
-  {
-    files: ['src/inspect.ts'],
+    files: ['src/inspect.mts'],
     rules: {
       'no-control-regex': 0
     }

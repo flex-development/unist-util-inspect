@@ -1,16 +1,19 @@
 # unist-util-inspect
 
-[![github release](https://img.shields.io/github/v/release/flex-development/unist-util-inspect.svg?include_prereleases&sort=semver)](https://github.com/flex-development/unist-util-inspect/releases/latest)
+[![ci](https://github.com/flex-development/unist-util-inspect/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/flex-development/unist-util-inspect/actions/workflows/ci.yml)
+[![github release](https://img.shields.io/github/v/release/flex-development/unist-util-inspect.svg?include_prereleases\&sort=semver)](https://github.com/flex-development/unist-util-inspect/releases/latest)
 [![npm](https://img.shields.io/npm/v/@flex-development/unist-util-inspect.svg)](https://npmjs.com/package/@flex-development/unist-util-inspect)
+[![npm downloads](https://img.shields.io/npm/dm/@flex-development/unist-util-inspect.svg)](https://www.npmcharts.com/compare/@flex-development/unist-util-inspect?interval=30)
+[![install size](https://packagephobia.now.sh/badge?p=@flex-development/unist-util-inspect)](https://packagephobia.now.sh/result?p=@flex-development/unist-util-inspect)
 [![codecov](https://codecov.io/gh/flex-development/unist-util-inspect/graph/badge.svg?token=4mBj091twh)](https://codecov.io/gh/flex-development/unist-util-inspect)
 [![module type: esm](https://img.shields.io/badge/module%20type-esm-brightgreen)](https://github.com/voxpelli/badges-cjs-esm)
 [![license](https://img.shields.io/github/license/flex-development/unist-util-inspect.svg)](LICENSE.md)
-[![conventional commits](https://img.shields.io/badge/-conventional%20commits-fe5196?logo=conventional-commits&logoColor=ffffff)](https://conventionalcommits.org/)
-[![typescript](https://img.shields.io/badge/-typescript-3178c6?logo=typescript&logoColor=ffffff)](https://typescriptlang.org/)
-[![vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat&logo=vitest&logoColor=ffffff)](https://vitest.dev/)
-[![yarn](https://img.shields.io/badge/-yarn-2c8ebb?style=flat&logo=yarn&logoColor=ffffff)](https://yarnpkg.com/)
+[![conventional commits](https://img.shields.io/badge/-conventional%20commits-fe5196?logo=conventional-commits\&logoColor=ffffff)](https://conventionalcommits.org/)
+[![typescript](https://img.shields.io/badge/-typescript-3178c6?logo=typescript\&logoColor=ffffff)](https://typescriptlang.org/)
+[![vitest](https://img.shields.io/badge/-vitest-6e9f18?style=flat\&logo=vitest\&logoColor=ffffff)](https://vitest.dev/)
+[![yarn](https://img.shields.io/badge/-yarn-2c8ebb?style=flat\&logo=yarn\&logoColor=ffffff)](https://yarnpkg.com/)
 
-[unist][unist] utility to inspect trees
+[unist][] utility to inspect trees
 
 ## Contents
 
@@ -28,7 +31,7 @@
 
 ## What is this?
 
-This is a tiny, but useful, package that pretty prints any [unist][unist] [*tree*][tree].
+This is a tiny, but useful, package that pretty prints any [unist][] [*tree*][tree].
 
 ## When should I use this?
 
@@ -39,7 +42,7 @@ as getting an idea of whats going on in the tree. Both trees and node lists can 
 
 This package is [ESM only][esm].
 
-In Node.js (version 18+) with [yarn][yarn]:
+In Node.js (18+) with [yarn][]:
 
 ```sh
 yarn add @flex-development/unist-util-inspect
@@ -48,7 +51,7 @@ yarn add @flex-development/unist-util-inspect
 <blockquote>
   <small>
     See <a href='https://yarnpkg.com/protocol/git'>Git - Protocols | Yarn</a>
-    &nbsp;for details regarding installing from Git.
+    &nbsp;for info regarding installing from Git.
   </small>
 </blockquote>
 
@@ -66,9 +69,15 @@ In browsers with [`esm.sh`][esmsh]:
 </script>
 ```
 
+With [bun][]:
+
+```sh
+bun add @flex-development/unist-util-inspect
+```
+
 ## Use
 
-Suppose we have the file [`dbl-linear.ts`](examples/dbl-linear.ts), and the following module, `example.ts`:
+Suppose we have the file [`dbl-linear.mts`](./dbl-linear.mts), and the following module, [`example.mts`](./example.mts):
 
 ```ts
 import type * as docast from '@flex-development/docast'
@@ -77,14 +86,14 @@ import { inspect } from '@flex-development/unist-util-inspect'
 import { read } from 'to-vfile'
 import type { VFile } from 'vfile'
 
-const file: VFile = await read('dbl-linear.ts')
+const file: VFile = await read('dbl-linear.mts')
 
 const tree: docast.Root = fromDocs(file)
 
 console.log(inspect(tree))
 ```
 
-...running `node --loader=./loader.mjs example.ts` yields:
+...running `node --experimental-strip-types --experimental-transform-types ./example.mts` yields:
 
 ```sh
 root[7]
@@ -213,8 +222,10 @@ root[7]
 
 ## API
 
-This package exports the identifiers [`inspect`](#inspecttree-options), [`inspectColor`](#inspectcolortree-options), and
-[`inspectNoColor`](#inspectnocolortree-options).
+This package exports the identifiers
+[`inspect`](#inspecttree-options),
+[`inspectColor`](#inspectcolortree-options),
+and [`inspectNoColor`](#inspectnocolortree-options).
 
 There is no default export.
 
@@ -224,8 +235,10 @@ Inspect a tree, with color in Node, without color in browsers.
 
 #### Parameters
 
-- `tree` (`unknown`) &mdash; tree to inspect
-- `options` ([`Options`](#options) | `null` | `undefined`) &mdash; configuration options
+- `tree` (`unknown`)
+  — tree to inspect
+- `options` ([`Options`](#options) | `null` | `undefined`)
+  — configuration options
 
 #### Returns
 
@@ -249,12 +262,13 @@ Configuration options (TypeScript type).
 
 #### Fields
 
-- `positions?` (`boolean | null | undefined`) &mdash; include positional information
+- `positions?` (`boolean | null | undefined`)
+  — include positional information
   - **default**: `true`
 
 ## Types
 
-This package is fully typed with [TypeScript][typescript].
+This package is fully typed with [TypeScript][].
 
 ## Contribute
 
@@ -263,9 +277,16 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 This project has a [code of conduct](CODE_OF_CONDUCT.md). By interacting with this repository, organization, or
 community you agree to abide by its terms.
 
+[bun]: https://bun.sh
+
 [esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
-[esmsh]: https://esm.sh/
+
+[esmsh]: https://esm.sh
+
 [tree]: https://github.com/syntax-tree/unist#tree
+
 [typescript]: https://www.typescriptlang.org
+
 [unist]: https://github.com/syntax-tree/unist
+
 [yarn]: https://yarnpkg.com

@@ -3,6 +3,7 @@
  * @module unist-util-inspect/tests/functional/inspect
  */
 
+import { inspectNoColor as testSubject } from '#inspect'
 import type * as docast from '@flex-development/docast'
 import { fromDocs } from '@flex-development/docast-util-from-docs'
 import { u } from '@flex-development/unist-util-builder'
@@ -10,7 +11,6 @@ import { h } from 'hastscript'
 import { readSync as read } from 'to-vfile'
 import type { Literal, Node, Parent } from 'unist'
 import { fromXml } from 'xast-util-from-xml'
-import { inspectNoColor as testSubject } from '../inspect'
 
 describe('functional:inspect', () => {
   it.each<Node>([

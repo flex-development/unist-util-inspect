@@ -3,8 +3,8 @@
  * @module unist-util-inspect/types/tests/unit-d/Options
  */
 
+import type TestSubject from '#types/options'
 import type { Nilable } from '@flex-development/tutils'
-import type TestSubject from '../options'
 
 describe('unit-d:types/Options', () => {
   it('should match [positions?: boolean | null | undefined]', () => {

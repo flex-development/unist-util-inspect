@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "customConditions": ["unist-util-inspect", "development"]
+  },
+  "extends": "./tsconfig.json"
+}

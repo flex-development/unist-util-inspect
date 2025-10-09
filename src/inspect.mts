@@ -4,8 +4,8 @@
  */
 
 import { color } from '#conditional-color'
-import type { Options } from './types'
-import { inspectValue } from './util'
+import { inspectValue } from '#util'
+import type { Options } from '@flex-development/unist-util-inspect'
 
 /**
  * Regular expression matching an ANSI color.
@@ -20,11 +20,14 @@ const COLOR_RE: RegExp =
  *
  * @see {@linkcode Options}
  *
- * @param {unknown} tree - Tree to inspect
- * @param {(Options | null)?} [options] - Configuration options
- * @return {string} Pretty printed `tree`
+ * @param {unknown} tree
+ *  The tree to inspect
+ * @param {Options | null} [options]
+ *  Configuration options
+ * @return {string}
+ *  Pretty printed `tree`
  */
-/* c8 ignore next 3 */
+/* v8 ignore next 3 */
 const inspect: (tree: unknown, options?: Options | null) => string = color
   ? inspectColor
   : inspectNoColor
@@ -34,9 +37,12 @@ const inspect: (tree: unknown, options?: Options | null) => string = color
  *
  * @see {@linkcode Options}
  *
- * @param {unknown} tree - Tree to inspect
- * @param {(Options | null)?} [options] - Configuration options
- * @return {string} Pretty printed `tree`
+ * @param {unknown} tree
+ *  The tree to inspect
+ * @param {Options | null} [options]
+ *  Configuration options
+ * @return {string}
+ *  Pretty printed `tree`
  */
 function inspectColor(tree: unknown, options?: Options | null): string {
   return inspectValue(tree, { positions: options?.positions ?? true })
@@ -47,9 +53,12 @@ function inspectColor(tree: unknown, options?: Options | null): string {
  *
  * @see {@linkcode Options}
  *
- * @param {unknown} tree - Tree to inspect
- * @param {(Options | null)?} [options] - Configuration options
- * @return {string} Pretty printed `tree`
+ * @param {unknown} tree
+ *  The tree to inspect
+ * @param {Options | null} [options]
+ *  Configuration options
+ * @return {string}
+ *  Pretty printed `tree`
  */
 function inspectNoColor(tree: unknown, options?: Options | null): string {
   return inspectColor(tree, options).replace(COLOR_RE, '')

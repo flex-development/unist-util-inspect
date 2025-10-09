@@ -3,19 +3,23 @@
  * @module unist-util-inspect/util
  */
 
+import type State from '#types/state'
 import {
   stringifyPosition
 } from '@flex-development/unist-util-stringify-position'
 import type { Literal, Node, Parent } from 'unist'
-import type State from './types/state'
+
+export { inspectValue }
 
 /**
  * Bold the given `value`.
  *
  * @internal
  *
- * @param {string} value - Value to color
- * @return {string} Colored `value`
+ * @param {string} value
+ *  The value to color
+ * @return {string}
+ *  Colored `value`
  */
 const bold: (value: string) => string = ansi(1, 22)
 
@@ -24,8 +28,10 @@ const bold: (value: string) => string = ansi(1, 22)
  *
  * @internal
  *
- * @param {string} value - Value to color
- * @return {string} Colored `value`
+ * @param {string} value
+ *  The value to color
+ * @return {string}
+ *  Colored `value`
  */
 const dim: (value: string) => string = ansi(2, 22)
 
@@ -34,8 +40,10 @@ const dim: (value: string) => string = ansi(2, 22)
  *
  * @internal
  *
- * @param {string} value - Value to color
- * @return {string} Colored `value`
+ * @param {string} value
+ *  The value to color
+ * @return {string}
+ *  Colored `value`
  */
 const green: (value: string) => string = ansi(32, 39)
 
@@ -44,8 +52,10 @@ const green: (value: string) => string = ansi(32, 39)
  *
  * @internal
  *
- * @param {string} value - Value to color
- * @return {string} Colored `value`
+ * @param {string} value
+ *  The value to color
+ * @return {string}
+ *  Colored `value`
  */
 const yellow: (value: string) => string = ansi(33, 39)
 
@@ -54,9 +64,12 @@ const yellow: (value: string) => string = ansi(33, 39)
  *
  * @internal
  *
- * @param {number} open - Opening color code
- * @param {number} close - Closing color code
- * @return {(value: string) => string} Function to colorize a value
+ * @param {number} open
+ *  The opening color code
+ * @param {number} close
+ *  The closing color code
+ * @return {(value: string) => string}
+ *  Function to colorize a value
  */
 function ansi(open: number, close: number): (value: string) => string {
   return color
@@ -64,8 +77,10 @@ function ansi(open: number, close: number): (value: string) => string {
   /**
    * Colorize `value`.
    *
-   * @param {string} value - Value to color
-   * @return {string} Colored `value`
+   * @param {string} value
+   *  The value to color
+   * @return {string}
+   *  Colored `value`
    */
   function color(value: string): string {
     return '\u001B[' + open + 'm' + value + '\u001B[' + close + 'm'
@@ -77,15 +92,19 @@ function ansi(open: number, close: number): (value: string) => string {
  *
  * @internal
  *
- * @param {string} value - Value to ident
- * @param {string} indentation - Indent to use
- * @param {boolean?} [skipFirst=false] - Skip indenting first line
- * @return {string} Indented `value`.
+ * @param {string} value
+ *  The value to ident
+ * @param {string} indentation
+ *  The indent to use
+ * @param {boolean | undefined} [skipFirst]
+ *  Whether to skip indenting first line
+ * @return {string}
+ *  Indented `value`
  */
 function indent(
   value: string,
   indentation: string,
-  skipFirst?: boolean
+  skipFirst?: boolean | undefined
 ): string {
   if (!value) return value
 
@@ -114,9 +133,12 @@ function indent(
  *
  * @internal
  *
- * @param {Record<string, any>} fields - Fields to format
- * @param {State} state - Info passed around
- * @return {string} Pretty printed `fields`
+ * @param {Record<string, any>} fields
+ *  Fields to format
+ * @param {State} state
+ *  Info passed around
+ * @return {string}
+ *  Pretty printed `fields`
  */
 function inspectFields(fields: Record<string, any>, state: State): string {
   /**
@@ -183,7 +205,7 @@ function inspectFields(fields: Record<string, any>, state: State): string {
 
   return indent(
     parts.join('\n'),
-    (Array.isArray(fields.children) && fields.children.length > 0
+    (Array.isArray(fields['children']) && fields['children'].length > 0
       ? dim('│')
       : ' ') + ' '
   )
@@ -194,9 +216,12 @@ function inspectFields(fields: Record<string, any>, state: State): string {
  *
  * @internal
  *
- * @param {Node | Literal | Parent} node - Node to format
- * @param {State} state - Info passed around
- * @return {string} Pretty printed `node`
+ * @param {Node | Literal | Parent} node
+ *  The node to format
+ * @param {State} state
+ *  Info passed around
+ * @return {string}
+ *  Pretty printed `node`
  */
 function inspectNode(node: Node | Literal | Parent, state: State): string {
   /**
@@ -248,9 +273,12 @@ function inspectNode(node: Node | Literal | Parent, state: State): string {
  *
  * @internal
  *
- * @param {unknown[]} nodes - Nodes to format
- * @param {State} state - Info passed around
- * @return {string} Pretty printed `nodes`
+ * @param {unknown[]} nodes
+ *  The nodes to format
+ * @param {State} state
+ *  Info passed around
+ * @return {string}
+ *  Pretty printed `nodes`
  */
 function inspectNodes(nodes: unknown[], state: State): string {
   /**
@@ -308,8 +336,10 @@ function inspectNodes(nodes: unknown[], state: State): string {
  *
  * @internal
  *
- * @param {unknown} value - Thing to format
- * @return {string} Pretty printed `value`
+ * @param {unknown} value
+ *  The thing to format
+ * @return {string}
+ *  Pretty printed `value`
  */
 function inspectNonTree(value: unknown): string {
   return value === undefined
@@ -324,9 +354,12 @@ function inspectNonTree(value: unknown): string {
  *
  * @internal
  *
- * @param {Node | Literal | Parent} node - Node to format
- * @param {State} state - Info passed around
- * @return {string} Pretty printed `node`
+ * @param {Node | Literal | Parent} node
+ *  The node to format
+ * @param {State} state
+ *  Info passed around
+ * @return {string}
+ *  Pretty printed `node`
  */
 function inspectTree(node: Node | Literal | Parent, state: State): string {
   /**
@@ -363,9 +396,12 @@ function inspectTree(node: Node | Literal | Parent, state: State): string {
  *
  * @internal
  *
- * @param {unknown} value - Thing to format
- * @param {State} state - Info passed around
- * @return {string} Pretty printed `value`
+ * @param {unknown} value
+ *  The thing to format
+ * @param {State} state
+ *  Info passed around
+ * @return {string}
+ *  Pretty printed `value`
  */
 function inspectValue(value: unknown, state: State): string {
   if (Array.isArray(value)) return inspectNodes(value, state)
@@ -378,8 +414,10 @@ function inspectValue(value: unknown, state: State): string {
  *
  * @internal
  *
- * @param {unknown} value - Thing to check
- * @return {value is Node} `true` if `value` looks like a node
+ * @param {unknown} value
+ *  The thing to check
+ * @return {value is Node}
+ *  `true` if `value` looks like a node, `false` otherwise
  */
 function nodelike(value: unknown): value is Node {
   return (
@@ -389,5 +427,3 @@ function nodelike(value: unknown): value is Node {
     typeof value.type === 'string'
   )
 }
-
-export { inspectValue }

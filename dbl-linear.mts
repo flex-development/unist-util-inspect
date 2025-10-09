@@ -4,6 +4,8 @@
  * @see https://codewars.com/kata/5672682212c8ecf83e000050
  */
 
+export default dblLinear
+
 /**
  * Consider a sequence `u` where `u` is defined as follows:
  *
@@ -72,5 +74,3 @@ function dblLinear(n: number): number {
 
   return u[n]!
 }
-
-export default dblLinear
