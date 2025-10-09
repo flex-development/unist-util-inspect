@@ -117,7 +117,7 @@
   },
   "dependencies": {
     "@flex-development/unist-util-stringify-position": "1.0.1",
-    "@types/unist": "3.0.2"
+    "@types/unist": "3.0.3"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "0.18.2",
@@ -168,7 +168,7 @@
   },
   "resolutions": {
     "@flex-development/docast": "1.0.0-alpha.18",
-    "@types/unist": "3.0.2"
+    "@types/unist": "3.0.3"
   },
   "packageManager": "yarn@4.10.3",
   "sideEffects": false
