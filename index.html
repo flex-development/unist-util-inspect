@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@flex-development/unist-util-inspect</title>
+  </head>
+
+  <body>
+    <script type="module">
+      import { fromDocs } from '@flex-development/docast-util-from-docs'
+      import { inspect } from '@flex-development/unist-util-inspect'
+
+      const file = await (await fetch('/@fs/dbl-linear.mts')).text()
+      const tree = fromDocs(file)
+
+      console.log(inspect(tree))
+    </script>
+  </body>
+</html>
