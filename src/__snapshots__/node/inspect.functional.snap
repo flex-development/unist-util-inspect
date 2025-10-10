@@ -1,149 +1,149 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`functional:inspect > should handle nodes outside of children (sample 0) 1`] = `
-"element<template>
-  content: root[0]"
+"[1melement[22m<template>
+  content[2m:[22m [1mroot[22m[2m[[22m[33m0[39m[2m][22m"
 `;
 
 exports[`functional:inspect > should handle nodes outside of children (sample 1) 1`] = `
-"jsxSpan[1]
-│ close: jsxTag
-│   attributes: []
-│   close: true
-│   name: jsxMember
-│     object: jsxMember
-│       object: jsxIdentifier "abc"
-│       property: jsxIdentifier "def"
-│     property: jsxIdentifier "ghi"
-│   selfClosing: false
-│ open: jsxTag
-│   attributes:
-│   ├─0 jsxAttribute null
-│   │     name: jsxIdentifier "alpha"
-│   ├─1 jsxAttributeExpression "...props"
-│   └─2 jsxAttribute null
-│         name: jsxIdentifier "bravo"
-│   close: false
-│   name: jsxMember
-│     object: jsxMember
-│       object: jsxIdentifier "abc"
-│       property: jsxIdentifier "def"
-│     property: jsxIdentifier "ghi"
-│   selfClosing: false
-└─0 jsxExpressionSpan "1 + 1""
+"[1mjsxSpan[22m[2m[[22m[33m1[39m[2m][22m
+[2m│[22m close[2m:[22m [1mjsxTag[22m
+[2m│[22m   attributes[2m:[22m []
+[2m│[22m   close[2m:[22m true
+[2m│[22m   name[2m:[22m [1mjsxMember[22m
+[2m│[22m     object[2m:[22m [1mjsxMember[22m
+[2m│[22m       object[2m:[22m [1mjsxIdentifier[22m [32m"abc"[39m
+[2m│[22m       property[2m:[22m [1mjsxIdentifier[22m [32m"def"[39m
+[2m│[22m     property[2m:[22m [1mjsxIdentifier[22m [32m"ghi"[39m
+[2m│[22m   selfClosing[2m:[22m false
+[2m│[22m open[2m:[22m [1mjsxTag[22m
+[2m│[22m   attributes[2m:[22m
+[2m│[22m   [2m├─0[22m [1mjsxAttribute[22m [32mnull[39m
+[2m│[22m   [2m│[22m     name[2m:[22m [1mjsxIdentifier[22m [32m"alpha"[39m
+[2m│[22m   [2m├─1[22m [1mjsxAttributeExpression[22m [32m"...props"[39m
+[2m│[22m   [2m└─2[22m [1mjsxAttribute[22m [32mnull[39m
+[2m│[22m         name[2m:[22m [1mjsxIdentifier[22m [32m"bravo"[39m
+[2m│[22m   close[2m:[22m false
+[2m│[22m   name[2m:[22m [1mjsxMember[22m
+[2m│[22m     object[2m:[22m [1mjsxMember[22m
+[2m│[22m       object[2m:[22m [1mjsxIdentifier[22m [32m"abc"[39m
+[2m│[22m       property[2m:[22m [1mjsxIdentifier[22m [32m"def"[39m
+[2m│[22m     property[2m:[22m [1mjsxIdentifier[22m [32m"ghi"[39m
+[2m│[22m   selfClosing[2m:[22m false
+[2m└─0[22m [1mjsxExpressionSpan[22m [32m"1 + 1"[39m"
 `;
 
 exports[`functional:inspect > should see attributes as data 1`] = `
-"root[1] (1:1-1:19, 0-18)
-└─0 element<album>[0] (1:1-1:19, 0-18)
-      attributes: {"id":"123"}"
+"[1mroot[22m[2m[[22m[33m1[39m[2m][22m [2m([22m1:1-1:19, 0-18[2m)[22m
+[2m└─0[22m [1melement[22m<album>[2m[[22m[33m0[39m[2m][22m [2m([22m1:1-1:19, 0-18[2m)[22m
+      attributes[2m:[22m {"id":"123"}"
 `;
 
 exports[`functional:inspect > should see data as data 1`] = `
-"album
-  data: {"id":"123"}"
+"[1malbum[22m
+  data[2m:[22m {"id":"123"}"
 `;
 
 exports[`functional:inspect > should see properties as data 1`] = `
-"element<button>[0]
-  properties: {"type":"submit","value":"Send"}"
+"[1melement[22m<button>[2m[[22m[33m0[39m[2m][22m
+  properties[2m:[22m {"type":"submit","value":"Send"}"
 `;
 
 exports[`functional:inspect > should support \`positions: false\` 1`] = `
-"comment[3]
-│ code: null
-├─0 blockTag<file>[1]
-│   │ tag: "@file"
-│   └─0 text "Fixtures - average"
-├─1 blockTag<module>[1]
-│   │ tag: "@module"
-│   └─0 text "fixtures/average"
-└─2 blockTag<see>[1]
-    │ tag: "@see"
-    └─0 text "https://codewars.com/kata/57a2013acf1fa5bfc4000921""
+"[1mcomment[22m[2m[[22m[33m3[39m[2m][22m
+[2m│[22m code[2m:[22m null
+[2m├─0[22m [1mblockTag[22m<file>[2m[[22m[33m1[39m[2m][22m
+[2m│[22m   [2m│[22m tag[2m:[22m "@file"
+[2m│[22m   [2m└─0[22m [1mtext[22m [32m"Fixtures - average"[39m
+[2m├─1[22m [1mblockTag[22m<module>[2m[[22m[33m1[39m[2m][22m
+[2m│[22m   [2m│[22m tag[2m:[22m "@module"
+[2m│[22m   [2m└─0[22m [1mtext[22m [32m"fixtures/average"[39m
+[2m└─2[22m [1mblockTag[22m<see>[2m[[22m[33m1[39m[2m][22m
+    [2m│[22m tag[2m:[22m "@see"
+    [2m└─0[22m [1mtext[22m [32m"https://codewars.com/kata/57a2013acf1fa5bfc4000921"[39m"
 `;
 
 exports[`functional:inspect > should work with list of nodes (sample 0) 1`] = `""`;
 
 exports[`functional:inspect > should work with list of nodes (sample 1) 1`] = `
-"├─0 comment[3] (1:1-5:4, 0-116)
-│   │ code: null
-│   ├─0 blockTag<file>[1] (2:4-2:25, 7-28)
-│   │   │ tag: "@file"
-│   │   └─0 text "Fixtures - diff" (2:10-2:25, 13-28)
-│   ├─1 blockTag<module>[1] (3:4-3:25, 32-53)
-│   │   │ tag: "@module"
-│   │   └─0 text "fixtures/diff" (3:12-3:25, 40-53)
-│   └─2 blockTag<see>[1] (4:4-4:59, 57-112)
-│       │ tag: "@see"
-│       └─0 text "https://codewars.com/kata/523f5d21c841566fde000009" (4:9-4:59, 62-112)
-└─1 comment[8] (7:1-23:4, 118-582)
-    │ code: null
-    ├─0 description[1] (8:4-9:37, 125-237)
-    │   └─0 paragraph[9] (8:4-9:37, 125-237)
-    │       ├─0 text "Given two number arrays, " (8:4-8:29, 125-150)
-    │       ├─1 inlineCode "a" (8:29-8:32, 150-153)
-    │       ├─2 text " and " (8:32-8:37, 153-158)
-    │       ├─3 inlineCode "b" (8:37-8:40, 158-161)
-    │       ├─4 text ", the function returns a new array with elements in " (8:40-9:16, 161-216)
-    │       ├─5 inlineCode "b" (9:16-9:19, 216-219)
-    │       ├─6 text " removed from " (9:19-9:33, 219-233)
-    │       ├─7 inlineCode "a" (9:33-9:36, 233-236)
-    │       └─8 text "." (9:36-9:37, 236-237)
-    ├─1 blockTag<example>[1] (11:4-12:27, 244-279)
-    │   │ tag: "@example"
-    │   └─0 code "diff([], [4, 5]) // []" (12:5-12:27, 257-279)
-    │         lang: null
-    │         meta: null
-    ├─2 blockTag<example>[1] (13:4-14:29, 283-320)
-    │   │ tag: "@example"
-    │   └─0 code "diff([3, 4], [3]) // [4]" (14:5-14:29, 296-320)
-    │         lang: null
-    │         meta: null
-    ├─3 blockTag<example>[1] (15:4-16:35, 324-367)
-    │   │ tag: "@example"
-    │   └─0 code "diff([1, 2, 3], [1, 2]) // [3]" (16:5-16:35, 337-367)
-    │         lang: null
-    │         meta: null
-    ├─4 blockTag<example>[1] (17:4-18:37, 371-416)
-    │   │ tag: "@example"
-    │   └─0 code "diff([1, 8, 2], []) // [1, 8, 2]" (18:5-18:37, 384-416)
-    │         lang: null
-    │         meta: null
-    ├─5 blockTag<param>[2] (20:4-20:44, 423-463)
-    │   │ tag: "@param"
-    │   ├─0 typeExpression "number[]" (20:11-20:21, 430-440)
-    │   └─1 text "a - First number array" (20:22-20:44, 441-463)
-    ├─6 blockTag<param>[2] (21:4-21:45, 467-508)
-    │   │ tag: "@param"
-    │   ├─0 typeExpression "number[]" (21:11-21:21, 474-484)
-    │   └─1 text "b - Second number array" (21:22-21:45, 485-508)
-    └─7 blockTag<return>[5] (22:4-22:70, 512-578)
-        │ tag: "@return"
-        ├─0 typeExpression "number[]" (22:12-22:22, 520-530)
-        ├─1 text "New array with elements in " (22:23-22:50, 531-558)
-        ├─2 inlineCode "b" (22:50-22:53, 558-561)
-        ├─3 text " removed from " (22:53-22:67, 561-575)
-        └─4 inlineCode "a" (22:67-22:70, 575-578)"
+"[2m├─0[22m [1mcomment[22m[2m[[22m[33m3[39m[2m][22m [2m([22m1:1-5:4, 0-116[2m)[22m
+[2m│[22m   [2m│[22m code[2m:[22m null
+[2m│[22m   [2m├─0[22m [1mblockTag[22m<file>[2m[[22m[33m1[39m[2m][22m [2m([22m2:4-2:25, 7-28[2m)[22m
+[2m│[22m   [2m│[22m   [2m│[22m tag[2m:[22m "@file"
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mtext[22m [32m"Fixtures - diff"[39m [2m([22m2:10-2:25, 13-28[2m)[22m
+[2m│[22m   [2m├─1[22m [1mblockTag[22m<module>[2m[[22m[33m1[39m[2m][22m [2m([22m3:4-3:25, 32-53[2m)[22m
+[2m│[22m   [2m│[22m   [2m│[22m tag[2m:[22m "@module"
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mtext[22m [32m"fixtures/diff"[39m [2m([22m3:12-3:25, 40-53[2m)[22m
+[2m│[22m   [2m└─2[22m [1mblockTag[22m<see>[2m[[22m[33m1[39m[2m][22m [2m([22m4:4-4:59, 57-112[2m)[22m
+[2m│[22m       [2m│[22m tag[2m:[22m "@see"
+[2m│[22m       [2m└─0[22m [1mtext[22m [32m"https://codewars.com/kata/523f5d21c841566fde000009"[39m [2m([22m4:9-4:59, 62-112[2m)[22m
+[2m└─1[22m [1mcomment[22m[2m[[22m[33m8[39m[2m][22m [2m([22m7:1-23:4, 118-582[2m)[22m
+    [2m│[22m code[2m:[22m null
+    [2m├─0[22m [1mdescription[22m[2m[[22m[33m1[39m[2m][22m [2m([22m8:4-9:37, 125-237[2m)[22m
+    [2m│[22m   [2m└─0[22m [1mparagraph[22m[2m[[22m[33m9[39m[2m][22m [2m([22m8:4-9:37, 125-237[2m)[22m
+    [2m│[22m       [2m├─0[22m [1mtext[22m [32m"Given two number arrays, "[39m [2m([22m8:4-8:29, 125-150[2m)[22m
+    [2m│[22m       [2m├─1[22m [1minlineCode[22m [32m"a"[39m [2m([22m8:29-8:32, 150-153[2m)[22m
+    [2m│[22m       [2m├─2[22m [1mtext[22m [32m" and "[39m [2m([22m8:32-8:37, 153-158[2m)[22m
+    [2m│[22m       [2m├─3[22m [1minlineCode[22m [32m"b"[39m [2m([22m8:37-8:40, 158-161[2m)[22m
+    [2m│[22m       [2m├─4[22m [1mtext[22m [32m", the function returns a new array with elements in "[39m [2m([22m8:40-9:16, 161-216[2m)[22m
+    [2m│[22m       [2m├─5[22m [1minlineCode[22m [32m"b"[39m [2m([22m9:16-9:19, 216-219[2m)[22m
+    [2m│[22m       [2m├─6[22m [1mtext[22m [32m" removed from "[39m [2m([22m9:19-9:33, 219-233[2m)[22m
+    [2m│[22m       [2m├─7[22m [1minlineCode[22m [32m"a"[39m [2m([22m9:33-9:36, 233-236[2m)[22m
+    [2m│[22m       [2m└─8[22m [1mtext[22m [32m"."[39m [2m([22m9:36-9:37, 236-237[2m)[22m
+    [2m├─1[22m [1mblockTag[22m<example>[2m[[22m[33m1[39m[2m][22m [2m([22m11:4-12:27, 244-279[2m)[22m
+    [2m│[22m   [2m│[22m tag[2m:[22m "@example"
+    [2m│[22m   [2m└─0[22m [1mcode[22m [32m"diff([], [4, 5]) // []"[39m [2m([22m12:5-12:27, 257-279[2m)[22m
+    [2m│[22m         lang[2m:[22m null
+    [2m│[22m         meta[2m:[22m null
+    [2m├─2[22m [1mblockTag[22m<example>[2m[[22m[33m1[39m[2m][22m [2m([22m13:4-14:29, 283-320[2m)[22m
+    [2m│[22m   [2m│[22m tag[2m:[22m "@example"
+    [2m│[22m   [2m└─0[22m [1mcode[22m [32m"diff([3, 4], [3]) // [4]"[39m [2m([22m14:5-14:29, 296-320[2m)[22m
+    [2m│[22m         lang[2m:[22m null
+    [2m│[22m         meta[2m:[22m null
+    [2m├─3[22m [1mblockTag[22m<example>[2m[[22m[33m1[39m[2m][22m [2m([22m15:4-16:35, 324-367[2m)[22m
+    [2m│[22m   [2m│[22m tag[2m:[22m "@example"
+    [2m│[22m   [2m└─0[22m [1mcode[22m [32m"diff([1, 2, 3], [1, 2]) // [3]"[39m [2m([22m16:5-16:35, 337-367[2m)[22m
+    [2m│[22m         lang[2m:[22m null
+    [2m│[22m         meta[2m:[22m null
+    [2m├─4[22m [1mblockTag[22m<example>[2m[[22m[33m1[39m[2m][22m [2m([22m17:4-18:37, 371-416[2m)[22m
+    [2m│[22m   [2m│[22m tag[2m:[22m "@example"
+    [2m│[22m   [2m└─0[22m [1mcode[22m [32m"diff([1, 8, 2], []) // [1, 8, 2]"[39m [2m([22m18:5-18:37, 384-416[2m)[22m
+    [2m│[22m         lang[2m:[22m null
+    [2m│[22m         meta[2m:[22m null
+    [2m├─5[22m [1mblockTag[22m<param>[2m[[22m[33m2[39m[2m][22m [2m([22m20:4-20:44, 423-463[2m)[22m
+    [2m│[22m   [2m│[22m tag[2m:[22m "@param"
+    [2m│[22m   [2m├─0[22m [1mtypeExpression[22m [32m"number[]"[39m [2m([22m20:11-20:21, 430-440[2m)[22m
+    [2m│[22m   [2m└─1[22m [1mtext[22m [32m"a - First number array"[39m [2m([22m20:22-20:44, 441-463[2m)[22m
+    [2m├─6[22m [1mblockTag[22m<param>[2m[[22m[33m2[39m[2m][22m [2m([22m21:4-21:45, 467-508[2m)[22m
+    [2m│[22m   [2m│[22m tag[2m:[22m "@param"
+    [2m│[22m   [2m├─0[22m [1mtypeExpression[22m [32m"number[]"[39m [2m([22m21:11-21:21, 474-484[2m)[22m
+    [2m│[22m   [2m└─1[22m [1mtext[22m [32m"b - Second number array"[39m [2m([22m21:22-21:45, 485-508[2m)[22m
+    [2m└─7[22m [1mblockTag[22m<return>[2m[[22m[33m5[39m[2m][22m [2m([22m22:4-22:70, 512-578[2m)[22m
+        [2m│[22m tag[2m:[22m "@return"
+        [2m├─0[22m [1mtypeExpression[22m [32m"number[]"[39m [2m([22m22:12-22:22, 520-530[2m)[22m
+        [2m├─1[22m [1mtext[22m [32m"New array with elements in "[39m [2m([22m22:23-22:50, 531-558[2m)[22m
+        [2m├─2[22m [1minlineCode[22m [32m"b"[39m [2m([22m22:50-22:53, 558-561[2m)[22m
+        [2m├─3[22m [1mtext[22m [32m" removed from "[39m [2m([22m22:53-22:67, 561-575[2m)[22m
+        [2m└─4[22m [1minlineCode[22m [32m"a"[39m [2m([22m22:67-22:70, 575-578[2m)[22m"
 `;
 
-exports[`functional:inspect > should work with literals (sample 0) 1`] = `"bigint 13n"`;
+exports[`functional:inspect > should work with literals (sample 0) 1`] = `"[1mbigint[22m [32m13n[39m"`;
 
-exports[`functional:inspect > should work with literals (sample 1) 1`] = `"boolean true"`;
+exports[`functional:inspect > should work with literals (sample 1) 1`] = `"[1mboolean[22m [32mtrue[39m"`;
 
-exports[`functional:inspect > should work with literals (sample 2) 1`] = `"number 3"`;
+exports[`functional:inspect > should work with literals (sample 2) 1`] = `"[1mnumber[22m [32m3[39m"`;
 
 exports[`functional:inspect > should work with literals (sample 3) 1`] = `
-"regexp "/(?<=(?<a>\\\\w){3})f/u"
-  flags: "u"
-  pattern: "(?<=(?<a>\\\\w){3})f""
+"[1mregexp[22m [32m"/(?<=(?<a>\\\\w){3})f/u"[39m
+  flags[2m:[22m "u"
+  pattern[2m:[22m "(?<=(?<a>\\\\w){3})f""
 `;
 
-exports[`functional:inspect > should work with literals (sample 4) 1`] = `"string """`;
+exports[`functional:inspect > should work with literals (sample 4) 1`] = `"[1mstring[22m [32m""[39m"`;
 
-exports[`functional:inspect > should work with literals (sample 5) 1`] = `"null null"`;
+exports[`functional:inspect > should work with literals (sample 5) 1`] = `"[1mnull[22m [32mnull[39m"`;
 
-exports[`functional:inspect > should work with literals (sample 6) 1`] = `"undefined undefined"`;
+exports[`functional:inspect > should work with literals (sample 6) 1`] = `"[1mundefined[22m [32mundefined[39m"`;
 
 exports[`functional:inspect > should work with non-nodes (sample 0) 1`] = `""node""`;
 
@@ -153,90 +153,90 @@ exports[`functional:inspect > should work with non-nodes (sample 2) 1`] = `"null
 
 exports[`functional:inspect > should work with non-nodes (sample 3) 1`] = `"null"`;
 
-exports[`functional:inspect > should work with parents (sample 0) 1`] = `"root[0]"`;
+exports[`functional:inspect > should work with parents (sample 0) 1`] = `"[1mroot[22m[2m[[22m[33m0[39m[2m][22m"`;
 
 exports[`functional:inspect > should work with parents (sample 1) 1`] = `
-"table[2]
-│ align: ["center","left"]
-├─0 tableRow[2]
-│   ├─0 tableCell[1]
-│   │   └─0 text "foo"
-│   └─1 tableCell[1]
-│       └─0 text "bar"
-└─1 tableRow[2]
-    ├─0 tableCell[1]
-    │   └─0 text "baz"
-    └─1 tableCell[1]
-        └─0 text "qux""
+"[1mtable[22m[2m[[22m[33m2[39m[2m][22m
+[2m│[22m align[2m:[22m ["center","left"]
+[2m├─0[22m [1mtableRow[22m[2m[[22m[33m2[39m[2m][22m
+[2m│[22m   [2m├─0[22m [1mtableCell[22m[2m[[22m[33m1[39m[2m][22m
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mtext[22m [32m"foo"[39m
+[2m│[22m   [2m└─1[22m [1mtableCell[22m[2m[[22m[33m1[39m[2m][22m
+[2m│[22m       [2m└─0[22m [1mtext[22m [32m"bar"[39m
+[2m└─1[22m [1mtableRow[22m[2m[[22m[33m2[39m[2m][22m
+    [2m├─0[22m [1mtableCell[22m[2m[[22m[33m1[39m[2m][22m
+    [2m│[22m   [2m└─0[22m [1mtext[22m [32m"baz"[39m
+    [2m└─1[22m [1mtableCell[22m[2m[[22m[33m1[39m[2m][22m
+        [2m└─0[22m [1mtext[22m [32m"qux"[39m"
 `;
 
 exports[`functional:inspect > should work with parents (sample 2) 1`] = `
-"root[4]
-├─0 comment[3] (1:1-5:4, 0-114)
-│   │ code: null
-│   ├─0 blockTag<file>[1] (2:4-2:24, 7-27)
-│   │   │ tag: "@file"
-│   │   └─0 text "Fixtures - hrt" (2:10-2:24, 13-27)
-│   ├─1 blockTag<module>[1] (3:4-3:24, 31-51)
-│   │   │ tag: "@module"
-│   │   └─0 text "fixtures/hrt" (3:12-3:24, 39-51)
-│   └─2 blockTag<see>[1] (4:4-4:59, 55-110)
-│       │ tag: "@see"
-│       └─0 text "https://codewars.com/kata/52685f7382004e774f0001f7" (4:9-4:59, 60-110)
-├─1 comment[6] (7:1-20:4, 116-473)
-│   │ code: null
-│   ├─0 description[1] (8:4-9:39, 123-238)
-│   │   └─0 paragraph[5] (8:4-9:39, 123-238)
-│   │       ├─0 text "Given a non-negative integer, " (8:4-8:34, 123-153)
-│   │       ├─1 inlineCode "seconds" (8:34-8:43, 153-162)
-│   │       ├─2 text ", the functions returns the time in a human-readable format (" (8:43-9:27, 162-226)
-│   │       ├─3 inlineCode "HH:MM:SS" (9:27-9:37, 226-236)
-│   │       └─4 text ")." (9:37-9:39, 236-238)
-│   ├─1 blockTag<example>[1] (11:4-12:25, 245-278)
-│   │   │ tag: "@example"
-│   │   └─0 code "hrt(0) // '00:00:00'" (12:5-12:25, 258-278)
-│   │         lang: null
-│   │         meta: null
-│   ├─2 blockTag<example>[1] (13:4-14:26, 282-316)
-│   │   │ tag: "@example"
-│   │   └─0 code "hrt(60) // '00:01:00'" (14:5-14:26, 295-316)
-│   │         lang: null
-│   │         meta: null
-│   ├─3 blockTag<example>[1] (15:4-16:30, 320-358)
-│   │   │ tag: "@example"
-│   │   └─0 code "hrt(359999) // '99:59:59'" (16:5-16:30, 333-358)
-│   │         lang: null
-│   │         meta: null
-│   ├─4 blockTag<param>[2] (18:4-18:45, 365-406)
-│   │   │ tag: "@param"
-│   │   ├─0 typeExpression "number" (18:11-18:19, 372-380)
-│   │   └─1 text "seconds - Time in seconds" (18:20-18:45, 381-406)
-│   └─5 blockTag<return>[4] (19:4-19:63, 410-469)
-│       │ tag: "@return"
-│       ├─0 typeExpression "string" (19:12-19:20, 418-426)
-│       ├─1 text "Time in human-readable format (" (19:21-19:52, 427-458)
-│       ├─2 inlineCode "HH:MM:SS" (19:52-19:62, 458-468)
-│       └─3 text ")" (19:62-19:63, 468-469)
-├─2 comment[2] (22:3-26:6, 519-613)
-│   │ code: null
-│   ├─0 description[1] (23:6-23:51, 528-573)
-│   │   └─0 paragraph[2] (23:6-23:51, 528-573)
-│   │       ├─0 inlineTag (23:6-23:25, 528-547)
-│   │       └─1 text " in human-readable format." (23:25-23:51, 547-573)
-│   └─1 blockTag<var>[2] (25:6-25:29, 584-607)
-│       │ tag: "@var"
-│       ├─0 typeExpression "string" (25:11-25:19, 589-597)
-│       └─1 text "formatted" (25:20-25:29, 598-607)
-└─3 comment[2] (31:5-35:8, 742-846)
-    │ code: null
-    ├─0 description[1] (32:8-32:58, 753-803)
-    │   └─0 paragraph[2] (32:8-32:58, 753-803)
-    │       ├─0 inlineTag (32:8-32:27, 753-772)
-    │       └─1 text " in hours, minutes, or seconds." (32:27-32:58, 772-803)
-    └─1 blockTag<const>[2] (34:8-34:28, 818-838)
-        │ tag: "@const"
-        ├─0 typeExpression "number" (34:15-34:23, 825-833)
-        └─1 text "time" (34:24-34:28, 834-838)"
+"[1mroot[22m[2m[[22m[33m4[39m[2m][22m
+[2m├─0[22m [1mcomment[22m[2m[[22m[33m3[39m[2m][22m [2m([22m1:1-5:4, 0-114[2m)[22m
+[2m│[22m   [2m│[22m code[2m:[22m null
+[2m│[22m   [2m├─0[22m [1mblockTag[22m<file>[2m[[22m[33m1[39m[2m][22m [2m([22m2:4-2:24, 7-27[2m)[22m
+[2m│[22m   [2m│[22m   [2m│[22m tag[2m:[22m "@file"
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mtext[22m [32m"Fixtures - hrt"[39m [2m([22m2:10-2:24, 13-27[2m)[22m
+[2m│[22m   [2m├─1[22m [1mblockTag[22m<module>[2m[[22m[33m1[39m[2m][22m [2m([22m3:4-3:24, 31-51[2m)[22m
+[2m│[22m   [2m│[22m   [2m│[22m tag[2m:[22m "@module"
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mtext[22m [32m"fixtures/hrt"[39m [2m([22m3:12-3:24, 39-51[2m)[22m
+[2m│[22m   [2m└─2[22m [1mblockTag[22m<see>[2m[[22m[33m1[39m[2m][22m [2m([22m4:4-4:59, 55-110[2m)[22m
+[2m│[22m       [2m│[22m tag[2m:[22m "@see"
+[2m│[22m       [2m└─0[22m [1mtext[22m [32m"https://codewars.com/kata/52685f7382004e774f0001f7"[39m [2m([22m4:9-4:59, 60-110[2m)[22m
+[2m├─1[22m [1mcomment[22m[2m[[22m[33m6[39m[2m][22m [2m([22m7:1-20:4, 116-473[2m)[22m
+[2m│[22m   [2m│[22m code[2m:[22m null
+[2m│[22m   [2m├─0[22m [1mdescription[22m[2m[[22m[33m1[39m[2m][22m [2m([22m8:4-9:39, 123-238[2m)[22m
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mparagraph[22m[2m[[22m[33m5[39m[2m][22m [2m([22m8:4-9:39, 123-238[2m)[22m
+[2m│[22m   [2m│[22m       [2m├─0[22m [1mtext[22m [32m"Given a non-negative integer, "[39m [2m([22m8:4-8:34, 123-153[2m)[22m
+[2m│[22m   [2m│[22m       [2m├─1[22m [1minlineCode[22m [32m"seconds"[39m [2m([22m8:34-8:43, 153-162[2m)[22m
+[2m│[22m   [2m│[22m       [2m├─2[22m [1mtext[22m [32m", the functions returns the time in a human-readable format ("[39m [2m([22m8:43-9:27, 162-226[2m)[22m
+[2m│[22m   [2m│[22m       [2m├─3[22m [1minlineCode[22m [32m"HH:MM:SS"[39m [2m([22m9:27-9:37, 226-236[2m)[22m
+[2m│[22m   [2m│[22m       [2m└─4[22m [1mtext[22m [32m")."[39m [2m([22m9:37-9:39, 236-238[2m)[22m
+[2m│[22m   [2m├─1[22m [1mblockTag[22m<example>[2m[[22m[33m1[39m[2m][22m [2m([22m11:4-12:25, 245-278[2m)[22m
+[2m│[22m   [2m│[22m   [2m│[22m tag[2m:[22m "@example"
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mcode[22m [32m"hrt(0) // '00:00:00'"[39m [2m([22m12:5-12:25, 258-278[2m)[22m
+[2m│[22m   [2m│[22m         lang[2m:[22m null
+[2m│[22m   [2m│[22m         meta[2m:[22m null
+[2m│[22m   [2m├─2[22m [1mblockTag[22m<example>[2m[[22m[33m1[39m[2m][22m [2m([22m13:4-14:26, 282-316[2m)[22m
+[2m│[22m   [2m│[22m   [2m│[22m tag[2m:[22m "@example"
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mcode[22m [32m"hrt(60) // '00:01:00'"[39m [2m([22m14:5-14:26, 295-316[2m)[22m
+[2m│[22m   [2m│[22m         lang[2m:[22m null
+[2m│[22m   [2m│[22m         meta[2m:[22m null
+[2m│[22m   [2m├─3[22m [1mblockTag[22m<example>[2m[[22m[33m1[39m[2m][22m [2m([22m15:4-16:30, 320-358[2m)[22m
+[2m│[22m   [2m│[22m   [2m│[22m tag[2m:[22m "@example"
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mcode[22m [32m"hrt(359999) // '99:59:59'"[39m [2m([22m16:5-16:30, 333-358[2m)[22m
+[2m│[22m   [2m│[22m         lang[2m:[22m null
+[2m│[22m   [2m│[22m         meta[2m:[22m null
+[2m│[22m   [2m├─4[22m [1mblockTag[22m<param>[2m[[22m[33m2[39m[2m][22m [2m([22m18:4-18:45, 365-406[2m)[22m
+[2m│[22m   [2m│[22m   [2m│[22m tag[2m:[22m "@param"
+[2m│[22m   [2m│[22m   [2m├─0[22m [1mtypeExpression[22m [32m"number"[39m [2m([22m18:11-18:19, 372-380[2m)[22m
+[2m│[22m   [2m│[22m   [2m└─1[22m [1mtext[22m [32m"seconds - Time in seconds"[39m [2m([22m18:20-18:45, 381-406[2m)[22m
+[2m│[22m   [2m└─5[22m [1mblockTag[22m<return>[2m[[22m[33m4[39m[2m][22m [2m([22m19:4-19:63, 410-469[2m)[22m
+[2m│[22m       [2m│[22m tag[2m:[22m "@return"
+[2m│[22m       [2m├─0[22m [1mtypeExpression[22m [32m"string"[39m [2m([22m19:12-19:20, 418-426[2m)[22m
+[2m│[22m       [2m├─1[22m [1mtext[22m [32m"Time in human-readable format ("[39m [2m([22m19:21-19:52, 427-458[2m)[22m
+[2m│[22m       [2m├─2[22m [1minlineCode[22m [32m"HH:MM:SS"[39m [2m([22m19:52-19:62, 458-468[2m)[22m
+[2m│[22m       [2m└─3[22m [1mtext[22m [32m")"[39m [2m([22m19:62-19:63, 468-469[2m)[22m
+[2m├─2[22m [1mcomment[22m[2m[[22m[33m2[39m[2m][22m [2m([22m22:3-26:6, 519-613[2m)[22m
+[2m│[22m   [2m│[22m code[2m:[22m null
+[2m│[22m   [2m├─0[22m [1mdescription[22m[2m[[22m[33m1[39m[2m][22m [2m([22m23:6-23:51, 528-573[2m)[22m
+[2m│[22m   [2m│[22m   [2m└─0[22m [1mparagraph[22m[2m[[22m[33m2[39m[2m][22m [2m([22m23:6-23:51, 528-573[2m)[22m
+[2m│[22m   [2m│[22m       [2m├─0[22m [1minlineTag[22m [2m([22m23:6-23:25, 528-547[2m)[22m
+[2m│[22m   [2m│[22m       [2m└─1[22m [1mtext[22m [32m" in human-readable format."[39m [2m([22m23:25-23:51, 547-573[2m)[22m
+[2m│[22m   [2m└─1[22m [1mblockTag[22m<var>[2m[[22m[33m2[39m[2m][22m [2m([22m25:6-25:29, 584-607[2m)[22m
+[2m│[22m       [2m│[22m tag[2m:[22m "@var"
+[2m│[22m       [2m├─0[22m [1mtypeExpression[22m [32m"string"[39m [2m([22m25:11-25:19, 589-597[2m)[22m
+[2m│[22m       [2m└─1[22m [1mtext[22m [32m"formatted"[39m [2m([22m25:20-25:29, 598-607[2m)[22m
+[2m└─3[22m [1mcomment[22m[2m[[22m[33m2[39m[2m][22m [2m([22m31:5-35:8, 742-846[2m)[22m
+    [2m│[22m code[2m:[22m null
+    [2m├─0[22m [1mdescription[22m[2m[[22m[33m1[39m[2m][22m [2m([22m32:8-32:58, 753-803[2m)[22m
+    [2m│[22m   [2m└─0[22m [1mparagraph[22m[2m[[22m[33m2[39m[2m][22m [2m([22m32:8-32:58, 753-803[2m)[22m
+    [2m│[22m       [2m├─0[22m [1minlineTag[22m [2m([22m32:8-32:27, 753-772[2m)[22m
+    [2m│[22m       [2m└─1[22m [1mtext[22m [32m" in hours, minutes, or seconds."[39m [2m([22m32:27-32:58, 772-803[2m)[22m
+    [2m└─1[22m [1mblockTag[22m<const>[2m[[22m[33m2[39m[2m][22m [2m([22m34:8-34:28, 818-838[2m)[22m
+        [2m│[22m tag[2m:[22m "@const"
+        [2m├─0[22m [1mtypeExpression[22m [32m"number"[39m [2m([22m34:15-34:23, 825-833[2m)[22m
+        [2m└─1[22m [1mtext[22m [32m"time"[39m [2m([22m34:24-34:28, 834-838[2m)[22m"
 `;
 
-exports[`functional:inspect > should work with void nodes 1`] = `"break"`;
+exports[`functional:inspect > should work with void nodes 1`] = `"[1mbreak[22m"`;

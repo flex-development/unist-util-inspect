@@ -1,14 +1,14 @@
 /**
- * @file Type Aliases - Options
- * @module unist-util-inspect/types/Options
+ * @file Interfaces - Options
+ * @module unist-util-inspect/interfaces/Options
  */
 
 /**
  * Configuration options.
  */
-type Options = {
+interface Options {
   /**
-   * Include positional information.
+   * Whether to include positional information.
    *
    * @default true
    */

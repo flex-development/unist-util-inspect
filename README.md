@@ -25,8 +25,9 @@
   - [`inspect(tree[, options])`](#inspecttree-options)
   - [`inspectColor(tree[, options])`](#inspectcolortree-options)
   - [`inspectNoColor(tree[, options])`](#inspectnocolortree-options)
-  - [`Options`](#options)
 - [Types](#types)
+  - [`Inspect`](#inspect)
+  - [`Options`](#options)
 - [Contribute](#contribute)
 
 ## What is this?
@@ -35,8 +36,9 @@ This is a tiny, but useful, package that pretty prints any [unist][] [*tree*][tr
 
 ## When should I use this?
 
-This utility pretty prints the tree in a format custom made for unist trees. This is useful for spotting bugs, as well
-as getting an idea of whats going on in the tree. Both trees and node lists can be printed.
+This utility pretty prints the tree in a format custom made for unist trees.
+This is useful for spotting bugs, as well as getting an idea of whats going on in the tree.
+Both trees and node lists can be printed.
 
 ## Install
 
@@ -231,44 +233,63 @@ There is no default export.
 
 ### `inspect(tree[, options])`
 
-Inspect a tree, with color in Node, without color in browsers.
+Inspect a tree with color in supported environments or without color in environments that do not support color.
 
 #### Parameters
 
 - `tree` (`unknown`)
-  — tree to inspect
+  — the tree to inspect
 - `options` ([`Options`](#options) | `null` | `undefined`)
   — configuration options
 
 #### Returns
 
-(`string`) Pretty printed `tree`.
+(`string`) Pretty printed `tree`
 
 ### `inspectColor(tree[, options])`
 
-Inspect a tree, with color.
+Inspect a tree with color.
 
 Otherwise the same as [`inspect`](#inspecttree-options).
 
 ### `inspectNoColor(tree[, options])`
 
-Inspect a tree, without color.
+Inspect a tree without color.
 
 Otherwise the same as [`inspect`](#inspecttree-options).
-
-### `Options`
-
-Configuration options (TypeScript type).
-
-#### Fields
-
-- `positions?` (`boolean | null | undefined`)
-  — include positional information
-  - **default**: `true`
 
 ## Types
 
 This package is fully typed with [TypeScript][].
+
+### `Inspect`
+
+Inspect a tree (TypeScript type).
+
+```ts
+type Inspect = (tree: unknown, options?: Options | null | undefined) => string
+```
+
+#### Parameters
+
+- `tree` (`unknown`)
+  — the tree to inspect
+- `options` ([`Options`](#options) | `null` | `undefined`)
+  — configuration options
+
+#### Returns
+
+(`string`) Pretty printed `tree`
+
+### `Options`
+
+Configuration options (TypeScript interface).
+
+#### Properties
+
+- `positions?` (`boolean | null | undefined`)
+  — whether to include positional information
+  - **default**: `true`
 
 ## Contribute
 

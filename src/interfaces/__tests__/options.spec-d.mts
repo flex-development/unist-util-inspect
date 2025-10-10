@@ -1,12 +1,12 @@
 /**
  * @file Type Tests - Options
- * @module unist-util-inspect/types/tests/unit-d/Options
+ * @module unist-util-inspect/interfaces/tests/unit-d/Options
  */
 
-import type TestSubject from '#types/options'
+import type TestSubject from '#interfaces/options'
 import type { Nilable } from '@flex-development/tutils'
 
-describe('unit-d:types/Options', () => {
+describe('unit-d:interfaces/Options', () => {
   it('should match [positions?: boolean | null | undefined]', () => {
     expectTypeOf<TestSubject>()
       .toHaveProperty('positions')

@@ -3,7 +3,7 @@
  * @module unist-util-inspect/tests/functional/inspect
  */
 
-import { inspectNoColor as testSubject } from '#inspect'
+import { inspect as testSubject } from '#inspect'
 import type * as docast from '@flex-development/docast'
 import { fromDocs } from '@flex-development/docast-util-from-docs'
 import { u } from '@flex-development/unist-util-builder'

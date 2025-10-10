@@ -3,65 +3,63 @@
  * @module unist-util-inspect/inspect
  */
 
-import { color } from '#conditional-color'
-import { inspectValue } from '#util'
-import type { Options } from '@flex-development/unist-util-inspect'
+import ifelse from '#internal/ifelse'
+import { inspectValue } from '#internal/util'
+import { isColorSupported, stripAnsi } from '@flex-development/colors'
+import type { Inspect, Options } from '@flex-development/unist-util-inspect'
+
+export { inspect, inspectColor, inspectNoColor }
 
 /**
- * Regular expression matching an ANSI color.
+ * Inspect a tree with color in supported environments or without color in
+ * environments that do not support color.
  *
- * @const {RegExp} COLOR_RE
+ * @see {@linkcode Inspect}
+ *
+ * @const {Inspect} inspect
  */
-const COLOR_RE: RegExp =
-  /(?:(?:\u001B\[)|\u009B)(?:\d{1,3})?(?:(?:;\d{0,3})*)?[A-Mf-m|]|\u001B[A-M]/g
+const inspect: Inspect = ifelse(isColorSupported, inspectColor, inspectNoColor)
 
 /**
- * Inspect a tree, with color in Node, without color in browsers.
+ * Inspect a `tree` with color.
  *
  * @see {@linkcode Options}
  *
+ * @this {void}
+ *
  * @param {unknown} tree
  *  The tree to inspect
- * @param {Options | null} [options]
+ * @param {Options | null | undefined} [options]
  *  Configuration options
  * @return {string}
  *  Pretty printed `tree`
  */
-/* v8 ignore next 3 */
-const inspect: (tree: unknown, options?: Options | null) => string = color
-  ? inspectColor
-  : inspectNoColor
-
-/**
- * Inspect a tree, with color.
- *
- * @see {@linkcode Options}
- *
- * @param {unknown} tree
- *  The tree to inspect
- * @param {Options | null} [options]
- *  Configuration options
- * @return {string}
- *  Pretty printed `tree`
- */
-function inspectColor(tree: unknown, options?: Options | null): string {
+function inspectColor(
+  this: void,
+  tree: unknown,
+  options?: Options | null | undefined
+): string {
   return inspectValue(tree, { positions: options?.positions ?? true })
 }
 
 /**
- * Inspect a tree, without color.
+ * Inspect a `tree` without color.
  *
  * @see {@linkcode Options}
  *
+ * @this {void}
+ *
  * @param {unknown} tree
  *  The tree to inspect
- * @param {Options | null} [options]
+ * @param {Options | null | undefined} [options]
  *  Configuration options
  * @return {string}
  *  Pretty printed `tree`
  */
-function inspectNoColor(tree: unknown, options?: Options | null): string {
-  return inspectColor(tree, options).replace(COLOR_RE, '')
+function inspectNoColor(
+  this: void,
+  tree: unknown,
+  options?: Options | null | undefined
+): string {
+  return stripAnsi(inspectColor(tree, options))
 }
-
-export { inspect, inspectColor, inspectNoColor }

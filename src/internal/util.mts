@@ -1,6 +1,6 @@
 /**
- * @file util
- * @module unist-util-inspect/util
+ * @file Internal - util
+ * @module unist-util-inspect/internal/util
  */
 
 import type State from '#types/state'

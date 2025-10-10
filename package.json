@@ -45,16 +45,13 @@
     "./package.json": "./package.json"
   },
   "imports": {
-    "#conditional-color": {
-      "browser": {
-        "unist-util-inspect": "./src/color.browser.mts",
-        "default": "./dist/color.browser.mjs"
-      },
-      "node": {
-        "unist-util-inspect": "./src/color.node.mts",
-        "default": "./dist/color.node.mjs"
-      },
-      "default": "./dist/color.node.mjs"
+    "#interfaces/*": {
+      "unist-util-inspect": "./src/interfaces/*.mts",
+      "default": "./dist/interfaces/*.d.mts"
+    },
+    "#internal/*": {
+      "unist-util-inspect": "./src/internal/*.mts",
+      "default": "./dist/internal/*.mjs"
     },
     "#inspect": {
       "unist-util-inspect": "./src/inspect.mts",
@@ -105,17 +102,18 @@
     "prepublishOnly": "toggle-scripts -prepack",
     "release": "bash ./scripts/release.sh",
     "remark": "remark .",
-    "test": "yarn clean:build; cross-env NODE_OPTIONS=\"--conditions unist-util-inspect\" vitest run",
+    "test": "yarn clean:build; vitest run",
     "test:cov": "yarn test --coverage",
     "test:cov:reports": "yarn test:cov --merge-reports --mode=reports",
     "test:cov:ui": "yarn test:ui --coverage",
     "test:cov:upload": "./codecov -t $CODECOV_TOKEN -f ./coverage/lcov.info",
     "test:reports": "yarn test --merge-reports --mode=reports",
-    "test:ui": "cross-env VITEST_UI=1 NODE_OPTIONS=\"--conditions unist-util-inspect\" vitest --ui",
+    "test:ui": "cross-env VITEST_UI=1 vitest --ui",
     "typecheck": "yarn test --typecheck --mode=typecheck",
     "typecheck:ui": "yarn test:ui --typecheck --mode=typecheck"
   },
   "dependencies": {
+    "@flex-development/colors": "1.0.2",
     "@flex-development/unist-util-stringify-position": "1.0.1",
     "@types/unist": "3.0.3"
   },
@@ -123,7 +121,6 @@
     "@arethetypeswrong/cli": "0.18.2",
     "@commitlint/cli": "20.1.0",
     "@commitlint/types": "20.0.0",
-    "@flex-development/colors": "1.0.2",
     "@flex-development/commitlint-config": "1.0.1",
     "@flex-development/docast": "1.0.0-alpha.18",
     "@flex-development/docast-util-from-docs": "1.0.0-alpha.1",

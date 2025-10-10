@@ -14,7 +14,7 @@ import fldv from '@flex-development/eslint-config'
 export default [
   ...fldv.configs.node,
   {
-    files: ['src/inspect.mts'],
+    files: ['src/internal/color-re.mts'],
     rules: {
       'no-control-regex': 0
     }
