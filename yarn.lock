@@ -1490,10 +1490,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/colors@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@flex-development/colors@npm:1.1.0"
-  checksum: 10/2f086ae85134f18eb9acecbe8afaff1ab562a65da8a2cff451e7d3940741865bc42c2bb0af91b79ae36b77a96f74f0739febb5239c8b9bb3343a8ee552ecc490
+"@flex-development/colors@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@flex-development/colors@npm:2.0.0"
+  checksum: 10/127b383643e16c544549459396480133fbf51a0fb75319786547672f7358a7ee7d6e14d0b2baec076c9f7d5566448b0dc71b0ff5db5b8bbda65102d86db7576a
   languageName: node
   linkType: hard
 
@@ -1546,14 +1546,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@flex-development/docast@npm:1.0.0-alpha.18":
-  version: 1.0.0-alpha.18
-  resolution: "@flex-development/docast@npm:1.0.0-alpha.18"
+"@flex-development/docast@npm:1.0.0-beta.2":
+  version: 1.0.0-beta.2
+  resolution: "@flex-development/docast@npm:1.0.0-beta.2"
   dependencies:
     "@flex-development/unist-util-types": "npm:1.6.1"
     "@types/mdast": "npm:4.0.4"
-    "@types/unist": "npm:3.0.2"
-  checksum: 10/d6220032308d0143b4e43b50ee66a48c7f193561dfdf28eabae78d51413fddbb4ff21e9c9762f1372c78d8fb2ebbed049b1479a559b1479ca01dbcac8f08966c
+    "@types/unist": "npm:3.0.3"
+  checksum: 10/9677b0694820dd1ff9539cc96107e37c07fe59d6da4124ff3f681ac5cf15318a0524956b709a84adb2c9fa4e89bd7cb945ae7998df99a7f0e1206faff5a53ab8
   languageName: node
   linkType: hard
 
@@ -2109,9 +2109,9 @@ __metadata:
     "@arethetypeswrong/cli": "npm:0.18.2"
     "@commitlint/cli": "npm:20.4.2"
     "@commitlint/types": "npm:20.4.0"
-    "@flex-development/colors": "npm:1.1.0"
+    "@flex-development/colors": "npm:2.0.0"
     "@flex-development/commitlint-config": "npm:1.0.1"
-    "@flex-development/docast": "npm:1.0.0-alpha.18"
+    "@flex-development/docast": "npm:1.0.0-beta.2"
     "@flex-development/docast-util-from-docs": "npm:1.0.0-alpha.1"
     "@flex-development/eslint-config": "npm:1.1.1"
     "@flex-development/grease": "npm:3.0.0-alpha.9"
